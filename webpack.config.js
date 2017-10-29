@@ -1,23 +1,20 @@
 var path = require('path');
 var webpack = require('webpack');
-
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:4000',
     './src/index.jsx'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'resources'),
     filename: 'bundle.js',
-    publicPath: '/build/'
+    publicPath: '/resources/'
   },
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel-loader'],
-        include: path.join(__dirname, 'src')
+        loader: "babel-loader"
       },
       {
         test: /\.scss$/,

@@ -4,9 +4,10 @@
   "description": "Simple and lightweight Boilerplate for ReactJS projects",
   "scripts": {
     "lint": "eslint src",
-    "start": "node server.js"
+    "start:webpack": "webpack --progress --colors --watch",
+    "start": "nodemon server.js --exec babel-node --presets es2015,stage-2"
   },
-  "repository": "https://github.com/noahlotzer/react-simple-boilerplate.git",
+  "repository": "https://github.com/gandhiamar2/TweetSearch.git",
   "keywords": [
     "react",
     "reactjs",
@@ -18,10 +19,6 @@
   ],
   "author": "Gandhi amarnadh",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/noahlotzer/react-simple-boilerplate/issues"
-  },
-  "homepage": "https://github.com/noahlotzer/react-simple-boilerplate",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -38,11 +35,11 @@
     "webpack-dev-server": "^2.4.4"
   },
   "dependencies": {
+    "axios": "^0.17.0",
     "babel-loader": "^7.0.0",
     "express": "^4.16.2",
     "nodemon": "^1.12.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
-  },
-  "main": "server.js"
+  }
 }

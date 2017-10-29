@@ -1,0 +1,47 @@
+.searchButton{
+  width: 150px;
+  height: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.searchField{
+  width: 200px;
+  height: 15px;
+  border: solid;
+}
+
+.searchBox {
+    padding-top: 40px;
+    margin-left: 40%;
+}
+
+.app{
+  background-color: #b9b7ea;
+}
+
+.listItem{
+  margin-bottom: 10px;
+font-size: 20px;
+list-style-type: none;
+font-family: fantasy;
+}
+
+.listGroup{
+  width: 100%;
+background: #b9b7ea;
+text-align: center;
+}
+
+.textClickable{
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.noData{
+  width: 100%;
+height: 500px;
+padding-top: 400px;
+margin-left: 42%;
+font-size: -webkit-xxx-large;
+}
